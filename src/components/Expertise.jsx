@@ -1,5 +1,5 @@
 import React from 'react';
-import bannerBackground from '../assets/rainbow-vortex.svg';
+import bannerBackground from '../assets/fe6.png';
 
 const skills = [
   'Core Java',

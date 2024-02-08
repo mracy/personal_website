@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import bannerImage from "../assets/fe3.jpeg";
-import bannerBackground from "../assets/rainbow-vortex.svg";
+import bannerBackground from "../assets/fe6.png";
 import Typed from "typed.js";
 
 const Banner = () => {
