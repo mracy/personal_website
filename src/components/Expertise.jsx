@@ -22,7 +22,7 @@ const skills = [
 
 const Expertise = () => {
   return (
-    <div id="expertiseSection" className="mt-2">
+    <div id="expertiseSection" className="mt-2" style={{ paddingTop: '100px' }}>
       <h1 className="mb-16 text-5xl font-bold underline text-center">My Expertise</h1>
       {/* box section */}
       <div
