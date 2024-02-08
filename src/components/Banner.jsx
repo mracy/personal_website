@@ -41,7 +41,7 @@ const Banner = () => {
       }}
       className="main-container flex items-center flex-col md:flex-row"
     >
-      <div className="w-full md:w-2/3 flex justify-center text-white">
+      <div className="w-full md:w-2/3 py-60 flex justify-center text-white">
         <div className="w-full md:w-2/3 ms-10">
           <h3 className="text-3xl font-semibold">Hi, I am</h3>
           <h1 className="mt-3 text-5xl font-bold">Aashish Chaudhary</h1>
