@@ -1,0 +1,36 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Your custom styles go here */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Responsive Font Sizes */
+@media (min-width: 576px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 22px;
+    }
+}
