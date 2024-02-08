@@ -7,5 +7,5 @@ export default defineConfig({
   build:{
     base: "/personal_website/",
     outDir: "./docs",
-  }
-})
+  },
+});
