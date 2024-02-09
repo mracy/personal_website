@@ -25,12 +25,12 @@ const About = () => {
   };
 
   return (
-    <div id="aboutSection" className="main-container bg-gray-100 py-8 md:py-16">
+    <div id="aboutSection" className="main-container bg-gray-100 py-8 md:py-20" style={{ fontFamily: 'Roboto, sans-serif' }}>
       <div className="max-w-6xl mx-auto px-4">
         <h1 className="text-center pb-4 md:pb-8 underline text-2xl md:text-5xl font-bold text-gray-800">
           About Me
         </h1>
-        <div className="flex flex-col md:flex-row items-center">
+        <div className="flex flex-col py-10 md:flex-row items-center">
           {/* image container */}
           <div className="w-full md:w-1/2 mb-8 md:mb-0">
             <img
@@ -46,26 +46,26 @@ const About = () => {
               <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-gray-900">
                 {data.title}
               </h1>
-              <p className="text-gray-700" style={{ textAlign: 'justify', whiteSpace: 'pre-line' }}>
+              <p className="text-gray-700" style={{ textAlign: 'justify', whiteSpace: 'pre-line', fontWeight: 400 }}>
                 {data.desc1}
               </p>
-              <p className="text-gray-700" style={{ textAlign: 'justify', whiteSpace: 'pre-line' }}>
+              <p className="text-gray-700" style={{ textAlign: 'justify', whiteSpace: 'pre-line', fontWeight: 400 }}>
                 {data.desc2}
               </p>
 
               {/* Additional descriptions with conditional rendering */}
               {isExpanded && (
                 <>
-                  <p className="text-gray-700" style={{ textAlign: 'justify', whiteSpace: 'pre-line' }}>
+                  <p className="text-gray-700" style={{ textAlign: 'justify', whiteSpace: 'pre-line', fontWeight: 400 }}>
                     {data.desc3}
                   </p>
-                  <p className="text-gray-700" style={{ textAlign: 'justify', whiteSpace: 'pre-line' }}>
+                  <p className="text-gray-700" style={{ textAlign: 'justify', whiteSpace: 'pre-line', fontWeight: 400 }}>
                     {data.desc4}
                   </p>
-                  <p className="text-gray-700" style={{ textAlign: 'justify', whiteSpace: 'pre-line' }}>
+                  <p className="text-gray-700" style={{ textAlign: 'justify', whiteSpace: 'pre-line', fontWeight: 400 }}>
                     {data.desc5}
                   </p>
-                  <p className="text-gray-700" style={{ textAlign: 'justify', whiteSpace: 'pre-line' }}>
+                  <p className="text-gray-700" style={{ textAlign: 'justify', whiteSpace: 'pre-line', fontWeight: 400 }}>
                     {data.desc6}
                   </p>
                 </>

@@ -1,15 +1,15 @@
 import React, { useRef, useEffect } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
-import bannerImage from "../assets/fe2.jpg";
-import bannerBackground from "../assets/fe26.webp";
-import Typed from "typed.js";
+import bannerImage from '../assets/fe2.jpg';
+import bannerBackground from '../assets/fe26.webp';
+import Typed from 'typed.js';
 
 const Banner = () => {
   const el = useRef(null);
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Frontend Developer", "Backend Developer", "Java Developer", "Software Engineer"],
+      strings: ['Frontend Developer', 'Backend Developer', 'Java Developer', 'Software Engineer'],
       startDelay: 100,
       typeSpeed: 50,
       backSpeed: 10,
@@ -23,10 +23,10 @@ const Banner = () => {
   }, []);
 
   const socialLinks = [
-    { iconClass: "fab fa-facebook", link: "https://www.facebook.com/hrsish.chaudhary.12" },
-    { iconClass: "fab fa-instagram", link: "https://www.instagram.com/iamaashishchaudhary/" },
-    { iconClass: "fab fa-linkedin", link: "https://www.linkedin.com/in/aashish-chaudhary-59a3811b0/" },
-    { iconClass: "fab fa-github", link: "https://github.com/mracy" },
+    { iconClass: 'fab fa-facebook', link: 'https://www.facebook.com/hrsish.chaudhary.12' },
+    { iconClass: 'fab fa-instagram', link: 'https://www.instagram.com/iamaashishchaudhary/' },
+    { iconClass: 'fab fa-linkedin', link: 'https://www.linkedin.com/in/aashish-chaudhary-59a3811b0/' },
+    { iconClass: 'fab fa-github', link: 'https://github.com/mracy' },
   ];
 
   return (
@@ -34,10 +34,12 @@ const Banner = () => {
       id="bannerSection"
       style={{
         backgroundImage: `url(${bannerBackground})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        minHeight: "600px",
-        paddingTop: "100px",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        minHeight: '600px',
+        paddingTop: '100px',
+        fontFamily: 'Roboto, sans-serif',
+        fontWeight: 400,
       }}
       className="main-container flex items-center flex-col md:flex-row"
     >

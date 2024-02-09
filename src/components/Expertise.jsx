@@ -8,8 +8,10 @@ const skills = [
 
 const Expertise = () => {
   return (
-    <div id="expertiseSection" className="mt-2" style={{ paddingTop: '100px' }}>
-      <h1 className="mb-16 text-5xl font-bold underline text-center">My Expertise</h1>
+    <div id="expertiseSection" className="mt-2" style={{ paddingTop: '100px', fontFamily: 'Roboto, sans-serif' }}>
+      <h1 className="text-center pb-4 md:pb-8 underline text-2xl md:text-5xl font-bold text-gray-800">
+         My Expertise
+        </h1>
       {/* box section */}
       <div
         style={{
@@ -20,19 +22,19 @@ const Expertise = () => {
       >
         {/* text container */}
         <div className="flex text-white justify-center md:w-1/2">
-  <div className="w-2/3 text-center space-y-4">
-    <h1 className="text-4xl font-bold">I love these technologies</h1>
-    <p className="text-justify">
-      I excel in Core Java, Java development, and C, ensuring efficient, reliable software. Proficient in SQL, Agile, Linux, and adept at HTML/CSS, JavaScript, React, and Node.js for responsive interfaces. Skilled in databases, Python, AWS, and RESTful services, I bring a holistic approach to software development.
-    </p>
-    <button
-      className="text-2xl px-6 py-3 bg-orange-500 rounded-full shadow-lg transition duration-300 hover:bg-orange-600 focus:outline-none"
-      onClick={() => console.log("Button clicked")}
-    >
-      Hire Me
-    </button>
-  </div>
-</div>
+          <div className="w-2/3 text-center space-y-4">
+            <h1 className="text-4xl font-bold">I love these technologies</h1>
+            <p className="text-justify">
+              I excel in Core Java, Java development, and C, ensuring efficient, reliable software. Proficient in SQL, Agile, Linux, and adept at HTML/CSS, JavaScript, React, and Node.js for responsive interfaces. Skilled in databases, Python, AWS, and RESTful services, I bring a holistic approach to software development.
+            </p>
+            <button
+              className="text-2xl px-6 py-3 bg-orange-500 rounded-full shadow-lg transition duration-300 hover:bg-orange-600 focus:outline-none"
+              onClick={() => console.log("Button clicked")}
+            >
+              Hire Me
+            </button>
+          </div>
+        </div>
 
         {/* skills container */}
         <div className="flex justify-center md:w-1/2">

@@ -18,8 +18,10 @@ const ContactMe = () => {
   };
 
   return (
-    <div id="contactSection" className="main-container bg-gray-100 py-16" style={{ paddingTop: '100px' }}>
-      <h1 className="text-center pb-8 md:pb-16 underline text-5xl font-bold">Contact Me</h1>
+    <div id="contactSection" className="main-container bg-gray-100 py-16" style={{ paddingTop: '100px', fontFamily: 'Roboto, sans-serif' }}>
+      <h1 className="text-center pb-4 md:pb-8 underline text-2xl md:text-5xl font-bold text-gray-800">
+          Contact Me
+        </h1>
       <div className="flex flex-col md:flex-row items-center w-full md:w-2/3 mx-auto">
         <div className="md:w-full p-4">
           <form onSubmit={handleSubmit} className="space-y-6">

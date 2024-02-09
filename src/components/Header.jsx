@@ -24,7 +24,7 @@ const Header = () => {
   };
 
   return (
-    <div className="fixed top-0 left-0 right-0 bg-gray-100 p-4 z-50">
+    <div className="fixed top-0 left-0 right-0 bg-gray-100 p-4 z-50" style={{ fontFamily: 'Roboto, sans-serif' }}>
       <div className="flex flex-col md:flex-row justify-between items-center">
         <div className="mb-4 md:mb-0 text-center md:text-left">
           <h1 className="text-2xl font-light">{brandName}</h1>

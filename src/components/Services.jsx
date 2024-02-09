@@ -70,9 +70,9 @@ const Services = () => {
 
   return (
     <div id="servicesSection" className="main-container py-16" style={{ paddingTop: '100px' }}>
-      <h1 className="text-center text-5xl underline mb-8">
-        My Services
-      </h1>
+      <h1 className="text-center pb-4 md:pb-8 underline text-2xl md:text-5xl font-bold text-gray-800">
+          My Services
+        </h1>
       <div className="services-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 md:px-12">
         {serviceData.map((data) => (
           <div key={data.id} className="cursor-pointer hover:bg-gray-100 bg-slate-100 p-5 text-center shadow-lg rounded-xl service1 space-y-4">

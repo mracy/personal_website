@@ -12,7 +12,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className="py-5 border flex flex-col md:flex-row justify-center md:justify-between px-5 md:px-72 bg-gray-100">
+    <div className="py-5 border flex flex-col md:flex-row justify-center md:justify-between px-5 md:px-72 bg-gray-100" style={{ fontFamily: 'Roboto, sans-serif' }}>
       <div className="text-center md:text-left">
         <p className="text-lg">© {currentYear} Aashish Chaudhary <span className="text-sm">All Rights Reserved</span></p>
       </div>
