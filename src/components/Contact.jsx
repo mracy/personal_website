@@ -33,7 +33,7 @@ const ContactMe = () => {
                 name="name"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="mt-1 p-3 w-full border rounded-md"
+                className="mt-1 p-3 w-full border rounded-md focus:outline-none focus:border-orange-500"
                 required
               />
             </div>
@@ -47,7 +47,7 @@ const ContactMe = () => {
                 name="email"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="mt-1 p-3 w-full border rounded-md"
+                className="mt-1 p-3 w-full border rounded-md focus:outline-none focus:border-orange-500"
                 required
               />
             </div>
@@ -61,14 +61,14 @@ const ContactMe = () => {
                 rows="4"
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                className="mt-1 p-3 w-full border rounded-md"
+                className="mt-1 p-3 w-full border rounded-md focus:outline-none focus:border-orange-500"
                 required
               ></textarea>
             </div>
             <div className="text-center">
               <button
                 type="submit"
-                className="bg-orange-500 px-4 py-2 text-lg rounded-full shadow-lg transition duration-300 hover:bg-orange-600"
+                className="bg-orange-500 px-6 py-3 text-lg rounded-full shadow-lg transition duration-300 hover:bg-orange-600 focus:outline-none"
               >
                 Submit
               </button>

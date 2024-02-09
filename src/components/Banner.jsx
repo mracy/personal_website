@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
-import bannerImage from "../assets/fe3.jpeg";
-import bannerBackground from "../assets/fe6.png";
+import bannerImage from "../assets/fe2.jpg";
+import bannerBackground from "../assets/fe26.webp";
 import Typed from "typed.js";
 
 const Banner = () => {
@@ -9,7 +9,7 @@ const Banner = () => {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Frontend Developer", "Backend Developer", "Software Engineer", "Java Developer"],
+      strings: ["Frontend Developer", "Backend Developer", "Java Developer", "Software Engineer"],
       startDelay: 100,
       typeSpeed: 50,
       backSpeed: 10,
@@ -49,9 +49,12 @@ const Banner = () => {
             And I'm a <span className="font-bold underline" ref={el}></span>
           </h2>
           <p className="mt-3 text-center md:text-left">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum vero quaerat tenetur consequuntur numquam facere
-            beatae asperiores reprehenderit, aliquid aut eius, accusantium repellendus maxime est nemo quam animi sit?
+            UI Weaver: React/Angular virtuoso, crafting dynamic interfaces with (HTML, CSS, JS) mastery.
+            Backend Titan: Java, Python, Node.js architect, building secure & robust server-side fortresses.
+            Java Maestro: Spring sculptor, crafting high-perf, scalable Java symphonies.
+            Full-Stack Guru: Polyglot problem-solver, tackling projects from ideation to launch.
           </p>
+          <br />
           <div className="icons-container flex space-x-5 justify-center md:justify-start">
             {socialLinks.map((social, index) => (
               <a
@@ -71,7 +74,7 @@ const Banner = () => {
               to="contactSection"
               smooth={true}
               duration={500}
-              className="text-2xl px-4 py-2 bg-orange-500 rounded-full shadow-lg mt-4 md:mt-0"
+              className="text-2xl px-4 py-2 bg-orange-500 hover:bg-orange-600 rounded-full shadow-lg mt-4 md:mt-0 transition duration-300 text-white"
             >
               Contact Me
             </ScrollLink>
@@ -83,7 +86,7 @@ const Banner = () => {
 
       <div className="w-full md:w-1/3 flex justify-center">
         <img
-          style={{ borderRadius: '50%', width: '400px', height: '400px' }}
+          style={{ borderRadius: '50%', width: '420px', height: '420px' }}
           className="rounded-full my-2 shadow-lg w-fit"
           src={bannerImage}
           alt="Aashish Chaudhary"
