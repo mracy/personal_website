@@ -36,7 +36,7 @@ const Header = () => {
                 key={link.id}
                 to={link.link}
                 smooth={true}
-                duration={500}
+                duration={200} 
                 className="hover:text-orange-600 cursor-pointer font-semibold"
               >
                 {link.title}

@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { Link as ScrollLink } from 'react-scroll';
+import { Link as ScrollLink, animateScroll } from 'react-scroll';
 import bannerImage from '../assets/fe2.jpg';
 import bannerBackground from '../assets/fe26.webp';
 import Typed from 'typed.js';
@@ -28,6 +28,13 @@ const Banner = () => {
     { iconClass: 'fab fa-linkedin', link: 'https://www.linkedin.com/in/aashish-chaudhary-59a3811b0/' },
     { iconClass: 'fab fa-github', link: 'https://github.com/mracy' },
   ];
+
+  const scrollToContact = () => {
+    animateScroll.scrollTo(document.getElementById('contactSection').offsetTop, {
+      duration: 200,
+      smooth: true,
+    });
+  };
 
   return (
     <div
@@ -72,14 +79,12 @@ const Banner = () => {
           </div>
           <br />
           <div className="justify-center text-center md:text-left cursor-pointer">
-            <ScrollLink
-              to="contactSection"
-              smooth={true}
-              duration={500}
+            <button
+              onClick={scrollToContact}
               className="text-2xl px-4 py-2 bg-orange-500 hover:bg-orange-600 rounded-full shadow-lg mt-4 md:mt-0 transition duration-300 text-white"
             >
               Contact Me
-            </ScrollLink>
+            </button>
           </div>
         </div>
       </div>

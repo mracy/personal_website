@@ -7,11 +7,20 @@ const skills = [
 ];
 
 const Expertise = () => {
+  const handleHireButtonClick = () => {
+    // Scroll to the top of the page
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', 
+      duration: 200,
+    });
+  };
+
   return (
     <div id="expertiseSection" className="mt-2" style={{ paddingTop: '100px', fontFamily: 'Roboto, sans-serif' }}>
       <h1 className="text-center pb-4 md:pb-8 underline text-2xl md:text-5xl font-bold text-gray-800">
-         My Expertise
-        </h1>
+        My Expertise
+      </h1>
       {/* box section */}
       <div
         style={{
@@ -29,7 +38,7 @@ const Expertise = () => {
             </p>
             <button
               className="text-2xl px-6 py-3 bg-orange-500 rounded-full shadow-lg transition duration-300 hover:bg-orange-600 focus:outline-none"
-              onClick={() => console.log("Button clicked")}
+              onClick={handleHireButtonClick}
             >
               Hire Me
             </button>
