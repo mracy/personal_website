@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import resumePDF from "../assets/Aashish_Resume.pdf";
 import { Link as ScrollLink } from 'react-scroll';
+import { FaBars } from 'react-icons/fa'; // Import the hamburger menu icon
 
 const Header = () => {
   const brandName = "Aashish Chaudhary";
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage the mobile menu
 
   const menuLinks = [
     { title: "Home", link: "bannerSection", id: 1 },
@@ -23,26 +25,34 @@ const Header = () => {
     document.body.removeChild(link);
   };
 
+  const handleMenuClick = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div className="fixed top-0 left-0 right-0 bg-gray-100 p-4 z-50" style={{ fontFamily: 'Roboto, sans-serif' }}>
       <div className="flex flex-col md:flex-row justify-between items-center">
         <div className="mb-4 md:mb-0 text-center md:text-left">
           <h1 className="text-2xl font-light">{brandName}</h1>
         </div>
-        <div className="md:ml-6">
-          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
-            {menuLinks.map((link) => (
+        <div className="md:hidden">
+          <FaBars onClick={handleMenuClick} className="cursor-pointer" size={28} /> {/* Larger hamburger icon */}
+        </div>
+        <div className={`md:flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 ${isMenuOpen ? 'block' : 'hidden'}`}>
+          {menuLinks.map((link) => (
+            <div key={link.id}> {/* Wrap each link in a div */}
               <ScrollLink
-                key={link.id}
                 to={link.link}
                 smooth={true}
-                duration={200} 
+                duration={200}
                 className="hover:text-orange-600 cursor-pointer font-semibold"
+                onClick={() => setIsMenuOpen(false)} // Close the menu on link click
               >
                 {link.title}
               </ScrollLink>
-            ))}
-          </div>
+              <br /> {/* Add a line break after each link */}
+            </div>
+          ))}
         </div>
         <div className="mt-4 md:mt-0">
           <button
