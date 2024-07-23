@@ -1,5 +1,5 @@
 import React from 'react';
-import bannerBackground from '../assets/fe20.jpeg';
+import bannerBackground from '../assets/fe33.jpeg';
 
 const skills = [
   'Core Java', 'Java', 'C', 'SQL', 'Testing', 'Agile', 'Linux', 'HTML/CSS', 'JavaScript',
@@ -30,14 +30,14 @@ const Expertise = () => {
         className="box-container items-center flex flex-col md:flex-row py-16"
       >
         {/* text container */}
-        <div className="flex text-white justify-center md:w-1/2">
+        <div className="flex text-black justify-center md:w-1/2">
           <div className="w-2/3 text-center space-y-4">
             <h1 className="text-4xl font-bold">I love these technologies</h1>
             <p className="text-justify">
               I excel in Core Java, Java development, and C, ensuring efficient, reliable software. Proficient in SQL, Agile, Linux, and adept at HTML/CSS, JavaScript, React, and Node.js for responsive interfaces. Skilled in databases, Python, AWS, and RESTful services, I bring a holistic approach to software development.
             </p>
             <button
-              className="text-2xl px-6 py-3 bg-orange-500 rounded-full shadow-lg transition duration-300 hover:bg-orange-600 focus:outline-none"
+              className="text-2xl text-white px-6 py-3 bg-orange-500 rounded-full shadow-lg transition duration-300 hover:bg-orange-600 focus:outline-none"
               onClick={handleHireButtonClick}
             >
               Hire Me

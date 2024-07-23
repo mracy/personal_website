@@ -70,7 +70,7 @@ const ContactMe = () => {
             <div className="text-center">
               <button
                 type="submit"
-                className="bg-orange-500 px-6 py-3 text-lg rounded-full shadow-lg transition duration-300 hover:bg-orange-600 focus:outline-none"
+                className="bg-orange-500 px-6 py-3 text-lg text-white rounded-full shadow-lg transition duration-300 hover:bg-orange-600 focus:outline-none"
               >
                 Submit
               </button>

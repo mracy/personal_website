@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { Link as ScrollLink, animateScroll } from 'react-scroll';
 import bannerImage from '../assets/fe2.jpg';
-import bannerBackground from '../assets/fe26.webp';
+import bannerBackground from '../assets/fe22.jpeg';
 import Typed from 'typed.js';
 
 const Banner = () => {
@@ -43,8 +43,7 @@ const Banner = () => {
         backgroundImage: `url(${bannerBackground})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        minHeight: '600px',
-        paddingTop: '100px',
+        minHeight: '100px',
         fontFamily: 'Roboto, sans-serif',
         fontWeight: 400,
       }}
@@ -91,14 +90,26 @@ const Banner = () => {
 
       <br />
 
-      <div className="w-full md:w-1/3 flex justify-center">
-        <img
-          style={{ borderRadius: '50%', width: '420px', height: '420px' }}
-          className="rounded-full my-2 shadow-lg w-fit"
-          src={bannerImage}
-          alt="Aashish Chaudhary"
-        />
+      <div className="w-full md:w-1/3 flex justify-center pt-20"> {/* Added pt-8 for padding top */}
+        <div className="relative" style={{ width: '29rem', height: '29rem' }}> {/* Slightly bigger container */}
+          <img
+            style={{
+              borderRadius: '50%', // Ensures circular shape
+              width: '100%',       // Ensures the image covers the container
+              height: '100%',      // Ensures the image covers the container
+              objectFit: 'cover'   // Ensures the image covers the container without distortion
+            }}
+            className="absolute inset-0 shadow-lg" // Apply shadow and positioning
+            src={bannerImage}       // Source of the image
+            alt="Aashish Chaudhary" // Alt text for the image
+          />
+        </div>
       </div>
+
+
+
+
+
     </div>
   );
 };

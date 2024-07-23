@@ -7,6 +7,7 @@ import Services from "./components/Services";
 import Expertise from "./components/Expertise";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+//import ImageCropper from './components/ImageCropper';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Expertise />
       <Contact />
       <Footer />
+
 
     
     </>

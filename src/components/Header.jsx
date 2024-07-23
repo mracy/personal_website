@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import resumePDF from "../assets/Aashish_Resume.pdf";
+import resumePDF from "../assets/AashishResume.pdf";
 import { Link as ScrollLink } from 'react-scroll';
 import { FaBars } from 'react-icons/fa'; // Import the hamburger menu icon
 
@@ -74,7 +74,7 @@ const Header = () => {
           <div className="mt-4 md:mt-0 mx-auto"> {/* Center the button */}
             <button
               onClick={handleDownloadCV}
-              className="px-4 py-2 bg-orange-500 shadow rounded-full text-xl hover:bg-orange-600 hover:text-white transition duration-300"
+              className="px-4 py-2 bg-orange-500 shadow rounded-full text-xl text-white hover:bg-orange-600 hover:text-white transition duration-300"
             >
               Download CV
             </button>
