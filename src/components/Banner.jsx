@@ -43,73 +43,67 @@ const Banner = () => {
         backgroundImage: `url(${bannerBackground})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        minHeight: '100px',
+        minHeight: '100vh',
         fontFamily: 'Roboto, sans-serif',
         fontWeight: 400,
       }}
-      className="main-container flex items-center flex-col md:flex-row"
+      className="flex items-center flex-col md:flex-row"
     >
-      <div className="w-full md:w-2/3 py-60 flex justify-center text-white">
-        <div className="w-full md:w-2/3 ms-10">
-          <h3 className="text-3xl font-semibold">Hi, I am</h3>
-          <h1 className="mt-3 text-5xl font-bold">Aashish Chaudhary</h1>
-          <h2 className="mt-3 text-3xl">
-            And I'm a <span className="font-bold underline" ref={el}></span>
-          </h2>
-          <p className="mt-3 text-center md:text-left">
-            UI Weaver: React/Angular virtuoso, crafting dynamic interfaces with (HTML, CSS, JS) mastery.
-            Backend Titan: Java, Python, Node.js architect, building secure & robust server-side fortresses.
-            Java Maestro: Spring sculptor, crafting high-perf, scalable Java symphonies.
-            Full-Stack Guru: Polyglot problem-solver, tackling projects from ideation to launch.
-          </p>
-          <br />
-          <div className="icons-container flex space-x-5 justify-center md:justify-start">
-            {socialLinks.map((social, index) => (
-              <a
-                key={index}
-                href={social.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:bg-orange-600 border cursor-pointer px-3 py-4 w-16 h-16 rounded-full flex justify-center items-center bg-gray-700"
-              >
-                <i className={social.iconClass}></i>
-              </a>
-            ))}
-          </div>
-          <br />
-          <div className="justify-center text-center md:text-left cursor-pointer">
-            <button
-              onClick={scrollToContact}
-              className="text-2xl px-4 py-2 bg-orange-500 hover:bg-orange-600 rounded-full shadow-lg mt-4 md:mt-0 transition duration-300 text-white"
+      <div className="w-full md:w-2/3 py-12 md:py-24 flex flex-col items-center md:items-start text-black px-4 md:px-8">
+        <h3 className="text-2xl md:text-3xl font-semibold">Hi, I am</h3>
+        <h1 className="mt-2 md:mt-3 text-3xl md:text-5xl font-bold">Aashish Chaudhary</h1>
+        <h2 className="mt-2 md:mt-3 text-2xl md:text-3xl">
+          And I'm a <span className="font-bold underline" ref={el}></span>
+        </h2>
+        <p className="mt-2 md:mt-3 text-center md:text-left text-sm md:text-base">
+          UI Weaver: React/Angular virtuoso, crafting dynamic interfaces with (HTML, CSS, JS) mastery.
+          Backend Titan: Java, Python, Node.js architect, building secure & robust server-side fortresses.
+          Java Maestro: Spring sculptor, crafting high-perf, scalable Java symphonies.
+          Full-Stack Guru: Polyglot problem-solver, tackling projects from ideation to launch.
+        </p>
+        <div className="icons-container flex space-x-4 md:space-x-6 mt-4">
+          {socialLinks.map((social, index) => (
+            <a
+              key={index}
+              href={social.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:bg-orange-600 border cursor-pointer px-3 py-3 md:px-4 md:py-4 w-12 md:w-16 h-12 md:h-16 rounded-full flex justify-center items-center bg-gray-700"
             >
-              Contact Me
-            </button>
+              <i className={`${social.iconClass} text-black`}></i>
+            </a>
+          ))}
+        </div>
+        <div className="mt-4 md:mt-6 text-center md:text-left">
+          <button
+            onClick={scrollToContact}
+            className="text-lg md:text-2xl px-4 py-2 md:px-6 md:py-3 bg-orange-500 hover:bg-orange-600 rounded-full shadow-lg transition duration-300 text-white"
+          >
+            Contact Me
+          </button>
+        </div>
+      </div>
+
+      <div className="w-full flex justify-center pt-10 md:pt-20 px-4">
+        <div className="relative" style={{ width: '30rem', height: '30rem', maxWidth: '100%', maxHeight: '100%' }}>
+          <div className="relative" style={{ paddingBottom: '100%' }}>
+            <img
+              style={{
+                borderRadius: '50%',
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                position: 'absolute',
+                top: 0,
+                left: 0
+              }}
+              className="shadow-lg"
+              src={bannerImage}
+              alt="Aashish Chaudhary"
+            />
           </div>
         </div>
       </div>
-
-      <br />
-
-      <div className="w-full md:w-1/3 flex justify-center pt-20"> {/* Added pt-8 for padding top */}
-        <div className="relative" style={{ width: '29rem', height: '29rem' }}> {/* Slightly bigger container */}
-          <img
-            style={{
-              borderRadius: '50%', // Ensures circular shape
-              width: '100%',       // Ensures the image covers the container
-              height: '100%',      // Ensures the image covers the container
-              objectFit: 'cover'   // Ensures the image covers the container without distortion
-            }}
-            className="absolute inset-0 shadow-lg" // Apply shadow and positioning
-            src={bannerImage}       // Source of the image
-            alt="Aashish Chaudhary" // Alt text for the image
-          />
-        </div>
-      </div>
-
-
-
-
-
     </div>
   );
 };
