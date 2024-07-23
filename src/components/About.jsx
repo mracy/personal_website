@@ -31,47 +31,47 @@ const About = () => {
           About Me
         </h1>
         <div className="flex flex-col py-10 md:flex-row items-center">
-          {/* image container */}
-          <div className="w-full md:w-1/2 mb-8 md:mb-0">
+          {/* Image Container */}
+          <div className="w-full md:w-1/2 mb-8 md:mb-0 flex justify-center">
             <img
               style={{ borderRadius: '50%', width: '100%', maxWidth: '400px', height: 'auto' }}
-              className="rounded-full shadow-lg mx-auto md:mx-0"
+              className="rounded-full shadow-lg"
               src={data.image}
               alt="Aashish Chaudhary"
             />
           </div>
-          {/* text container */}
+          {/* Text Container */}
           <div className="w-full md:w-1/2">
-            <div className="space-y-5 text-center md:text-left">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-gray-900">
+            <div className="space-y-4 text-center md:text-left">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-gray-900 mb-4">
                 {data.title}
-              </h1>
-              <p className="text-gray-700" style={{ textAlign: 'justify', whiteSpace: 'pre-line', fontWeight: 400 }}>
+              </h2>
+              <p className="text-gray-700 text-lg md:text-xl leading-relaxed mb-4">
                 {data.desc1}
               </p>
-              <p className="text-gray-700" style={{ textAlign: 'justify', whiteSpace: 'pre-line', fontWeight: 400 }}>
+              <p className="text-gray-700 text-lg md:text-xl leading-relaxed mb-4">
                 {data.desc2}
               </p>
 
-              {/* Additional descriptions with conditional rendering */}
+              {/* Additional Descriptions with Conditional Rendering */}
               {isExpanded && (
                 <>
-                  <p className="text-gray-700" style={{ textAlign: 'justify', whiteSpace: 'pre-line', fontWeight: 400 }}>
+                  <p className="text-gray-700 text-lg md:text-xl leading-relaxed mb-4">
                     {data.desc3}
                   </p>
-                  <p className="text-gray-700" style={{ textAlign: 'justify', whiteSpace: 'pre-line', fontWeight: 400 }}>
+                  <p className="text-gray-700 text-lg md:text-xl leading-relaxed mb-4">
                     {data.desc4}
                   </p>
-                  <p className="text-gray-700" style={{ textAlign: 'justify', whiteSpace: 'pre-line', fontWeight: 400 }}>
+                  <p className="text-gray-700 text-lg md:text-xl leading-relaxed mb-4">
                     {data.desc5}
                   </p>
-                  <p className="text-gray-700" style={{ textAlign: 'justify', whiteSpace: 'pre-line', fontWeight: 400 }}>
+                  <p className="text-gray-700 text-lg md:text-xl leading-relaxed mb-4">
                     {data.desc6}
                   </p>
                 </>
               )}
 
-              {/* Read more button with toggle function */}
+              {/* Read More / Read Less Button */}
               <div className="text-center md:text-left">
                 <button
                   onClick={toggleExpand}

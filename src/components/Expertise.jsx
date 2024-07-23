@@ -33,7 +33,7 @@ const Expertise = () => {
         <div className="flex text-black justify-center md:w-1/2">
           <div className="w-2/3 text-center space-y-4">
             <h1 className="text-4xl font-bold">I love these technologies</h1>
-            <p className="text-justify">
+            <p className="text-justify leading-relaxed">
               I excel in Core Java, Java development, and C, ensuring efficient, reliable software. Proficient in SQL, Agile, Linux, and adept at HTML/CSS, JavaScript, React, and Node.js for responsive interfaces. Skilled in databases, Python, AWS, and RESTful services, I bring a holistic approach to software development.
             </p>
             <button
