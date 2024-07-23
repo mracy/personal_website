@@ -44,6 +44,7 @@ const Banner = () => {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         minHeight: '100vh',
+        paddingTop: '200px',
         fontFamily: 'Roboto, sans-serif',
         fontWeight: 400,
       }}
