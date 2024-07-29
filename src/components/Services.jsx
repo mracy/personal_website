@@ -4,6 +4,16 @@ import React, { useState } from "react";
 const Services = () => {
   const [expandedServices, setExpandedServices] = useState([]);
 
+  // Define icon mapping for each service
+  const iconMapping = {
+    '1': 'fa-solid fa-laptop-code',        // Example icon for Web Development
+    '2': 'fa-solid fa-globe',               // Example icon for Web-based Applications
+    '3': 'fa-solid fa-desktop',            // Example icon for Desktop Applications
+    '4': 'fa-solid fa-gamepad',            // Example icon for Games & Animation Projects
+    '5': 'fa-solid fa-database',           // Example icon for Databases
+    '6': 'fa-solid fa-cogs',               // Example icon for ERP
+  };
+
   const serviceData = [
     {
       id: '1',
@@ -77,7 +87,7 @@ const Services = () => {
       <div className="services-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 md:px-12">
         {serviceData.map((data) => (
           <div key={data.id} className="cursor-pointer hover:bg-gray-100 bg-slate-100 p-5 text-center shadow-lg rounded-xl space-y-4">
-            <i className="text-5xl fa-brands fa-aws mb-4"></i>
+            <i className={`text-5xl ${iconMapping[data.id]} mb-4`}></i> {/* Dynamic Font Awesome icon */}
             <h1 className="text-4xl font-semibold mb-2">{data.title}</h1>
             <p className={`text-justify leading-relaxed ${expandedServices.includes(data.id) ? 'expanded' : 'custom-line-height'}`}>
               {expandedServices.includes(data.id) ? data.description : `${data.description.slice(0, 150)}...`}
@@ -94,7 +104,5 @@ const Services = () => {
     </div>
   );
 };
-
-
 
 export default Services;

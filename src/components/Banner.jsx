@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { Link as ScrollLink, animateScroll } from 'react-scroll';
-import bannerImage from '../assets/fe2.jpg';
+import bannerImage from '../assets/fe55.jpeg';
 import bannerBackground from '../assets/fe22.jpeg';
 import Typed from 'typed.js';
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import bannerImage from '../assets/fe14.jpeg';
+import bannerImage from '../assets/fe44.jpeg';
 import { Link as ScrollLink } from 'react-scroll';
 
 const About = () => {
@@ -25,21 +25,30 @@ const About = () => {
   };
 
   return (
-    <div id="aboutSection" className="main-container bg-gray-100 py-8 md:py-20" style={{ fontFamily: 'Roboto, sans-serif' }}>
+    <div id="aboutSection" className="main-container bg-gray-100 py-8 md:py-28" style={{ fontFamily: 'Roboto, sans-serif' }}>
       <div className="max-w-6xl mx-auto px-4">
         <h1 className="text-center pb-4 md:pb-8 underline text-2xl md:text-5xl font-bold text-gray-800">
           About Me
         </h1>
         <div className="flex flex-col py-10 md:flex-row items-center">
           {/* Image Container */}
-          <div className="w-full md:w-1/2 mb-8 md:mb-0 flex justify-center">
-            <img
-              style={{ borderRadius: '50%', width: '100%', maxWidth: '400px', height: 'auto' }}
-              className="rounded-full shadow-lg"
-              src={data.image}
-              alt="Aashish Chaudhary"
-            />
-          </div>
+         <div className="w-full md:w-1/2 mb-8 md:mb-0 flex justify-center">
+           <img
+             style={{
+               width: '100%',
+               maxWidth: '400px',     // Maximum width for larger screens
+               height: 'auto',        // Height adjusts automatically based on width
+               aspectRatio: '1 / 1',  // Maintain aspect ratio to keep the circle shape
+               borderRadius: '50%',   // Ensure circular shape
+               objectFit: 'cover'     // Cover the circle without distortion
+             }}
+             className="rounded-full shadow-lg"
+             src={data.image}
+             alt="Aashish Chaudhary"
+           />
+         </div>
+
+
           {/* Text Container */}
           <div className="w-full md:w-1/2">
             <div className="space-y-4 text-center md:text-left">
