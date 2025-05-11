@@ -57,13 +57,12 @@ const Banner = () => {
                 <h2 className="mt-2 md:mt-3 text-2xl md:text-3xl">
                     And I'm a <span className="font-bold underline" ref={el}></span>
                 </h2>
-                <p className="mt-2 md:mt-3 text-center md:text-left text-base md:text-lg text-justify">
+                <p className="mt-2 md:mt-3 text-left md:text-justify text-base md:text-lg">
                     UI Weaver: React/Angular virtuoso, crafting dynamic interfaces with (HTML, CSS, JS) mastery.
                     Backend Titan: Java, Python, Node.js architect, building secure & robust server-side fortresses.
                     Java Maestro: Spring sculptor, crafting high-perf, scalable Java symphonies.
                     Full-Stack Guru: Polyglot problem-solver, tackling projects from ideation to launch.
                 </p>
-
 
                 <div className="icons-container flex space-x-4 md:space-x-6 mt-4">
                     {socialLinks.map((social, index) => (
@@ -87,7 +86,6 @@ const Banner = () => {
                     </button>
                 </div>
             </div>
-
 
             <div className="w-full flex justify-center pt-10 md:pt-20 px-4">
                 <div className="relative" style={{ width: '30rem', height: '30rem', maxWidth: '100%', maxHeight: '100%' }}>
