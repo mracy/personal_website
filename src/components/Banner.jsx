@@ -57,7 +57,7 @@ const Banner = () => {
                 <h2 className="mt-2 md:mt-3 text-2xl md:text-3xl">
                     And I'm a <span className="font-bold underline" ref={el}></span>
                 </h2>
-                <p className="mt-2 md:mt-3 text-left md:text-justify text-base md:text-lg">
+                <p className="mt-2 md:mt-3 text-left text-base md:text-lg">
                     UI Weaver: React/Angular virtuoso, crafting dynamic interfaces with (HTML, CSS, JS) mastery.
                     Backend Titan: Java, Python, Node.js architect, building secure & robust server-side fortresses.
                     Java Maestro: Spring sculptor, crafting high-perf, scalable Java symphonies.
