@@ -21,7 +21,7 @@ const Header = () => {
     const pdfPath = resumePDF;
     const link = document.createElement("a");
     link.href = pdfPath;
-    link.download = "Aashish's-CV.pdf";
+    link.download = "Aashish_Software_Engineer_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

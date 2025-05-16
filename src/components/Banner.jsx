@@ -10,7 +10,7 @@ const Banner = () => {
 
     useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ['Frontend Developer', 'Backend Developer', 'Java Developer', 'Software Engineer'],
+            strings: ['Software Engineer', 'Java Engineer', 'ML Engineer', 'Data Scientist', 'Sales Engineer' ],
             startDelay: 100,
             typeSpeed: 50,
             backSpeed: 10,
